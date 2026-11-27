@@ -59,3 +59,8 @@ The run may take a while and requires a working network connection. Save the ter
 - Handle the rosdep initialization error explicitly instead of treating every error as success.
 - Record a clean-VM run, including failures and fixes.
 - Document how the ISO itself was assembled; that process is not automated in this repository today.
+## VirtualBox configuration files
+
+The local `PAP/PAP` folder contains a VirtualBox machine definition and generated unattended-install files. `PAP.vbox` references an auxiliary `.viso` file, which in turn points to config files through absolute paths from the original machine. The preseed file also contained literal account and root passwords. These files are therefore machine-specific and unsafe to publish as reusable setup files.
+
+The repository ignores this local folder. To reproduce the VM, create a fresh VirtualBox configuration and enter your own installation details locally; do not commit preseed files containing passwords.

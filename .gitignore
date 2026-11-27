@@ -1,8 +1,7 @@
-# Local VirtualBox images and installer output
+# Local VirtualBox images and saved state
 /PAP-002.vdi
 /Robuntu V.2-001.iso
 /*.sav
 
-# VirtualBox-generated logs and backup configuration
-/PAP/PAP/Logs/
-/PAP/PAP/*.vbox-prev*
+# Local VirtualBox machine and generated unattended-install configuration
+/PAP/PAP/
