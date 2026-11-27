@@ -1,0 +1,14 @@
+On ISO:
+openssh-client V
+openssh-server V
+Arduino V
+arduino-ide V
+ros noetic full desktop V
+nomachine V
+catkin tools V
+rospy V
+singularity V
+
+Bash Script:
+docker
+mrs uav
